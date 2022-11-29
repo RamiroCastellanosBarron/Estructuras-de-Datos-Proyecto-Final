@@ -1,0 +1,2 @@
+C:\Users\ramir\source\repos\Rutas\x64\Debug\Rutas.exe
+C:\Projects\Estructuras de Datos\Rutas\x64\Debug\Rutas.exe

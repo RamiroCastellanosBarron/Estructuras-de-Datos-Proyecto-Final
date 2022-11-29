@@ -1,0 +1,47 @@
+30
+Alexandria Algeciras 1805
+Ambarli Antwerp 3174
+Balboa Bandar 9136
+Bandar Barcelona 4448
+Algeciras Bremen 1645
+Busan Alexandria 7679
+Bremen Busan 11099
+Alexandria Balboa 6162
+Barcelona Balboa 4890
+Cai_Me Callao 10684
+Busan Antwerp 10807
+Ambarli Algeciras 1799
+Busan Balboa 8126
+Cartagena Alexandria 5894
+Charleston Busan 9713
+Cai_Me Chennai 2196
+Charleston Callao 2972
+Algeciras Callao 5743
+Chennai Balboa 10325
+Callao Ambarli 7538
+Cartagena Balboa 320
+Busan Barcelona 9099
+Ambarli Bremen 3427
+Algeciras Bandar 4778
+Cartagena Antwerp 4583
+Chittagong Ambarli 5567
+Cartagena Callao 1689
+Bremen Cai_Me 9219
+Algeciras Barcelona 531
+Cai_Me Balboa 10011
+15
+Alexandria
+Algeciras
+Ambarli
+Antwerp
+Balboa
+Bandar
+Barcelona
+Bremen
+Busan
+Cai_Me
+Callao
+Cartagena
+Charleston
+Chennai
+Chittagong
