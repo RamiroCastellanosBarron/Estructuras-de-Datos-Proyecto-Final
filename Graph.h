@@ -343,20 +343,20 @@ void Graph<T>::shortestPathBetweenVertices(T source, T target) {
 		// imprimimos la ruta entre los vértices
 		// Buscamos el índice del vértice destino (findVertex)
 
-		// for (int i=0; i<size; i++) {
-		//     cout << "Source: " << vertices[i] << " -> ";
-		//     // Validamos si hay path
-		//     if (pathList[i].empty()) {
-		//         // No hay path
-		//         cout << "No hay path" << endl;
-		//     } else {
-		//         while (!pathList[i].empty()) {
-		//             cout << pathList[i].top() << " ";
-		//             pathList[i].pop();
-		//         }
-		//         cout << " dist: " << cost[i] << endl;
-		//     }
-		// }
+		 for (int i=0; i<size; i++) {
+		     cout << "Source: " << vertices[i] << " -> ";
+		     // Validamos si hay path
+		     if (pathList[i].empty()) {
+		         // No hay path
+		         cout << "No hay path" << endl;
+		     } else {
+		         while (!pathList[i].empty()) {
+		             cout << pathList[i].top() << " ";
+		             pathList[i].pop();
+		         }
+		         cout << " dist: " << cost[i] << endl;
+		     }
+		 }
 
 
 	}

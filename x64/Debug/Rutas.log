@@ -1,1 +1,30 @@
-﻿  Rutas.vcxproj -> C:\Projects\Estructuras de Datos\Rutas\x64\Debug\Rutas.exe
+﻿  Rutas.cpp
+C:\Projects\Estructuras de Datos\Rutas\Rutas.cpp(55,45): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Projects\Estructuras de Datos\Rutas\Rutas.cpp(60,43): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Projects\Estructuras de Datos\Rutas\Rutas.cpp(46,24): warning C4101: 'posEspacioDestino': unreferenced local variable
+C:\Projects\Estructuras de Datos\Rutas\Graph.h(44,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Projects\Estructuras de Datos\Rutas\Graph.h(40,1): message : while compiling class template member function 'void Graph<std::string>::loadVertices(std::vector<T,std::allocator<T>>)'
+          with
+          [
+              T=std::string
+          ]
+C:\Projects\Estructuras de Datos\Rutas\Rutas.cpp(85,20): message : see reference to function template instantiation 'void Graph<std::string>::loadVertices(std::vector<T,std::allocator<T>>)' being compiled
+          with
+          [
+              T=std::string
+          ]
+C:\Projects\Estructuras de Datos\Rutas\Rutas.cpp(40,16): message : see reference to class template instantiation 'Graph<std::string>' being compiled
+C:\Projects\Estructuras de Datos\Rutas\Graph.h(70,13): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+C:\Projects\Estructuras de Datos\Rutas\Graph.h(61,1): message : while compiling class template member function 'int Graph<std::string>::findVertex(T)'
+          with
+          [
+              T=std::string
+          ]
+C:\Projects\Estructuras de Datos\Rutas\Graph.h(87,19): message : see reference to function template instantiation 'int Graph<std::string>::findVertex(T)' being compiled
+          with
+          [
+              T=std::string
+          ]
+C:\Projects\Estructuras de Datos\Rutas\Graph.h(34,1): message : while compiling class template member function 'Graph<std::string>::Graph(void)'
+C:\Projects\Estructuras de Datos\Rutas\Rutas.cpp(40,16): message : see reference to function template instantiation 'Graph<std::string>::Graph(void)' being compiled
+  Rutas.vcxproj -> C:\Projects\Estructuras de Datos\Rutas\x64\Debug\Rutas.exe

@@ -7,11 +7,40 @@
 using namespace std;
 #include "Graph.h"
 
-void leerArchivo() {
+void menu(string ciudadOrigen, string ciudadDestino) {
+	cout << "\n\nM E N U\n\n"
+		<<"_________________________\n\n"
+		<<"Ciudad de origen: "<<ciudadOrigen<<"\n"
+		<<"Ciudad de destino: "<<ciudadDestino<<"\n\n"
+		<< "\t1. Ingresar origen y destino\n"
+		<< "\t2. Desplegar ruta optima\n"
+		<< "\t3. Salir\n\n"
+		<< "\t>> Ingrese una opcion: ";
+}
+
+int main()
+{
+	bool llave = true;
+	int opcion = 0;
+	bool archivoValido = true;
+	string nombreArchivo = "";
+
+	do {
+		cout << "\n\n\t>> Ingrese el nombre del archivo: ";
+		cin >> nombreArchivo;
+		if (nombreArchivo == "archivo") {
+			archivoValido = false;
+			nombreArchivo += ".txt";
+		}
+		else {
+			cout << "\n\n\t>> Ingrese una opcion valida.";
+		}
+	} while (archivoValido);
+
 	Graph<string> graph;
 	string Text;
 	vector<string> cities;
-	ifstream File("archivo.txt");
+	ifstream File(nombreArchivo);
 	vector<string> origen, destino, weight;
 	string ciudadOrigen, ciudadDestino, destinoPeso, peso;
 	int posEspacioOrigen, posEspacioDestino;
@@ -49,68 +78,43 @@ void leerArchivo() {
 	}*/
 
 	int sizeVertices = stoi(archivo.at(31));
-	for (int i = 32; i < (32+sizeVertices); i++) {
+	for (int i = 32; i < (32 + sizeVertices); i++) {
 		cities.push_back(archivo.at(i));
 	}
 
 	graph.loadVertices(cities);
 
 	graph.loadGraph(edges);
-	graph.print();
 
-	graph.shortestPath("Alexandria");
-}
-
-void menu() {
-	cout << "\n\nM E N U\n\n"
-		<< "\t1. Ingresar origen y destino\n"
-		<< "\t2. Desplegar ruta optima\n"
-		<< "\t3. Salir\n\n"
-		<< "\t>> Ingrese una opcion: ";
-}
-
-int main()
-{
-	/*bool llave = true;
-	int opcion = 0;
-	bool archivoValido = true;
-	string nombreArchivo = "";
+	string CiudadOrigen = "Por definir", CiudadDestino = "Por definir";
 
 	do {
-		cout << "\n\n\t>> Ingrese el nombre del archivo: ";
-		cin >> nombreArchivo;
-		if (nombreArchivo == "archivo") {
-			archivoValido = false;
-			nombreArchivo += ".txt";
-		}
-		else {
-			cout << "\n\n\t>> Ingrese una opcion valida.";
-		}
-	} while (archivoValido);*/
-
-	leerArchivo();
-
-	/*do {
-		menu();
+		menu(CiudadOrigen, CiudadDestino);
 		cin >> opcion;
 		system("cls");
 		switch (opcion) {
 		case 1:
-			cout << "\n\nIngresar origen y destino\n\n";
+			cout << "\n\n\t>> Ingrese la ciudad de origen: ";
+			cin >> CiudadOrigen;
+			cout << "\n\n\t>> Ingrese la ciudad de destino: ";
+			cin >> CiudadDestino;
+			graph.shortestPathBetweenVertices(CiudadOrigen, CiudadDestino);
+			system("cls");
 			break;
 		case 2:
-			cout << "\n\nDesplegar rutas optimas\n\n";
+			graph.print();
 			break;
 		case 3:
 			cout << "\n\nSalir\n\n";
 			llave = false;
+			system("cls");
 			break;
 		default:
 			cout << "\n\n\t>> Ingrese una opcion valida.\n\n";
 			break;
 		}
 
-	} while (llave);*/
+	} while (llave);
 
 	return 0;
 }
